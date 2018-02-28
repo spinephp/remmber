@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class='top' style='background-image:url("../images/beijing2.png");'>
+   <navigator url='/pages/my/my' class='set'>设置</navigator>
+   <view class='box-im'>
+      <image class='im' src='../images/touxiang2.png'></image>
+   </view>
+  <view class='box-im1' >
+      <text>徐建建</text>
+      <view class='box-imm'>
+         <image class='im1' src='../images/1.png'></image>
+     </view>
+     <view class='box-imm'>
+         <image class='im1' src='../images/2.png'></image>
+     </view>
+  </view>
+  <text class='tel'>188-8888-8888</text>
+</view>
+<view class='midl'>
+   <navigator class='mid' url='/pages/record/record'>
+      <text>12月累计课时</text>
+      <view class='mid-r' ><view style='background:#67db34'>20</view></view>
+   </navigator>
+   <view class='imag'><image src='../images/shu.png'></image></view>
+    <navigator class='mid' url='/pages/record/record'>
+      <text>01月累计课时</text>
+      <view class='mid-r'><view  style='background:#db9234'>20</view></view>
+   </navigator>
+   <view class='imag'><image src='../images/shu.png'></image></view>
+    <navigator class='mid' url='/pages/record/record'>
+      <text>02月累计课时</text>
+      <view class='mid-r'><view style='background:#3487db'>20</view></view>
+   </navigator>
+</view>
+<view class='boo'>
+   <navigator url='/pages/class/class'><view><image src='../images/a1@3x.png'></image></view><text>课程</text></navigator>
+   <view class='ig'><image src='../images/shu1.png'></image></view>
+   <navigator url='/pages/index/index'><view><image src='../images/b2@3x.png'></image></view><text style='color:#34dbbd'>我的</text></navigator>
+</view>

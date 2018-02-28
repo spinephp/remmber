@@ -1,0 +1,53 @@
+.top{
+   font-family: "微软雅黑";
+    overflow: hidden;
+    margin-top: 5%;
+    width: 94%;
+    margin-left: 3%;
+}
+.m1{
+   float: left;
+    margin-top: 10px;
+    height: 1px;
+    width: 36%;
+}
+.m2{
+   float: left;
+    margin-top: 10px;
+    height: 1px;
+    width: 36%;
+}
+.t{
+  float: left;
+    font-size: 16px;
+    margin:  0 3%;
+}
+.all{
+  background: #ffffff;
+  padding-bottom: 20px;
+  width: 96%;
+  margin: 2% 2% 0 2%;
+  padding-top: 10px;
+}
+.box{
+  padding: 0 8px;
+  font-size: 12px;
+  height: 28px;
+  line-height: 28px;
+  border-bottom: 1px dashed #f0f0f0;
+  color: #666666; 
+}
+.t1{
+  float: left;
+   width: 46%;
+  display: block;
+}
+.t2{
+  float: left;
+  width: 26%;
+  text-align: center;
+  display: block;
+}
+.t3{
+  float: right;
+}

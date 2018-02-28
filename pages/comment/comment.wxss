@@ -1,0 +1,153 @@
+.box_top{
+  margin: 2% 2% 0 2%;
+  height: 70px;
+  width: 96%;
+  background-size: 100% 100%;
+}
+.box_t{
+  font-size: 16px;
+  margin-left: 3%;
+  height: 34px;
+  line-height: 34px;
+}
+.box_p{
+  font-size: 12px;
+  color: #666666;
+}
+.p1{
+  display: inline-block;
+  margin-left: 3%;
+  width: 40%;
+  
+}
+.p2{
+  display: inline-block;
+  width: 28%;
+  text-align: center;
+}
+.p3{
+  display: inline-block;
+  width:29%;
+  text-align: center;
+}
+.box_main{
+  background: #ffffff;
+  margin: 0 2% 0 2%;
+  border-radius:0 0  5px 5px ;
+  padding-bottom: 15px;
+}
+.box{
+  margin-left: 3%;
+  overflow: hidden;
+}
+.box_m{
+   float: left;
+   margin-right: 2%;
+   width: 17%;
+   height: 80px;
+   background-color: #f0f0f0;
+   margin-top: 10px;
+   border-radius: 8px;
+   border: 1px solid #34dbbd;
+}
+.box_i{
+   float: left;
+   margin-right: 2%;
+   width: 17%;
+   height: 80px;
+   background-color: #f0f0f0;
+   margin-top: 10px;
+   border-radius: 8px;
+   border: 1px solid #f0f0f0;
+}
+
+.box_img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+.im{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.txt{
+  font-size: 12px;
+  text-align: center;
+  display: block;
+}
+
+.all{
+  width: 100%;
+  min-height: 680px;
+  position: fixed;
+  left: 0;
+  top:0;
+}
+.bottom{
+   position: fixed;
+  left: 8%;
+  top:22%;
+  width: 84%;
+  background: #ffffff;
+  border-radius: 8px;
+}
+.del{
+  float: right;
+}
+.name{
+  text-align: center;
+  margin-top: 43px;
+  height: 36px;
+  line-height: 36px;
+  width: 90%;
+  margin-left: 5%;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.tt{
+  width: 70%;
+  height: 60px;
+  margin: 6px auto;
+  background: #f8f8f8;
+  border: 1px solid #dddddd;
+}
+.btn{
+  width: 50%;
+  background: #34dbbd;
+  border:none;
+  color: white;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.all_box{
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  margin-left: -50px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 10px solid #ffffff;
+}
+.all_img{
+   width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+
+/*星级评分  */
+.full{
+  overflow: hidden;
+}
+.jl{
+  font-size: 14px;
+  float: left;
+}

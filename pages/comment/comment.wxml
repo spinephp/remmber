@@ -1,0 +1,90 @@
+<view class='box_top' style='background-image:url("../images/title_beijing.png");'>
+   <view class='box_t'>街舞入门：基本动作教学</view>
+   <view class='box_p'>
+      <text class='p1'>上课内容：街舞站位</text>
+      <text class='p2'>课时消耗：4</text> 
+      <text class='p3'>学员人数：15</text>     
+   </view>
+</view>
+<view class='box_main'>
+
+   <view class='box'>
+      <view class='box_m'>
+        <view class='box_img'><image class='im' src='../images/jj.png'></image></view>
+            <text class='txt'>王小二</text>
+      </view>
+       <view class='box_m'>
+      <view class='box_img'><image class='im' src='../images/jj.png'></image></view>
+            <text class='txt'>王小二</text>
+      </view>
+        <view class='box_i' >
+       <view class='box_img'><image class='im' src='../images/jj.png'></image></view>
+            <text class='txt'>王小二</text>
+      </view>
+        <view class='box_i' >
+       <view class='box_img'><image class='im' src='../images/jj.png'></image></view>
+            <text class='txt'>王小二</text>
+      </view>
+       <view class='box_i' >
+       <view class='box_img'><image class='im' src='../images/jj.png'></image></view>
+            <text class='txt'>王小二</text>
+      </view>
+   </view>
+    <view class='box'>
+      <view class='box_i' >  
+            <view class='box_img'><image class='im' src='../images/jj.png'></image></view>
+            <text class='txt'>王小二</text>
+      </view>
+       <view class='box_m'>
+       <view class='box_img'><image class='im' src='../images/jj.png'></image></view>
+            <text class='txt'>王小二</text>
+      </view>
+        <view class='box_i' >
+       <view class='box_img'><image class='im' src='../images/jj.png'></image></view>
+            <text class='txt'>王小二</text>
+      </view>
+        <view class='box_i' >
+        <view class='box_img'><image class='im' src='../images/jj.png'></image></view>
+            <text class='txt'>王小二</text>
+      </view>
+       <view class='box_m'>
+        <view class='box_img'><image class='im' src='../images/jj.png'></image></view>
+            <text class='txt'>王小二</text>
+      </view>
+   </view>
+</view>
+
+<view class='all' style='background-image:url("../images/opacity.png")'>
+  <view class='bottom'>
+  <view class='del'><image src='../images/x@3x.png' style='width:12px;height:12px; margin-right:8px;'></image></view>
+  <view class='name'>一叶知秋</view>
+  
+ <view class='full'>
+   <view class='jl' style='font-size: 14px; margin-left: 15%;height:30px;line-height:30px'>纪律专注：</view>
+     <view class="zan-font-16 my-ib" bindtap="myStarChoose" style='height:30px;line-height:30px'>
+    <block wx:for="{{starMap}}">
+      <text wx:if="{{star>=index+1}}" style="padding-right: .5em;color:#ff9c00;" class="zan-c-red" data-star="{{index+1}}">★</text>
+      <text wx:if="{{star<index+1}}" style="padding-right: .5em;color:#808080;" class="zan-c-gray-dark" data-star="{{index+1}}">☆</text>
+    </block>
+  </view>
+  <!--★-->
+  <view class="zan-c-gray-dark" style='color:#808080;font-size:14px;height:30px;line-height:30px;float:right;margin-right:15%;margin-top:-28px;'>{{starMap[star-1]}}</view>
+</view>
+
+<view class='full'>
+   <view class='jl' style='font-size: 14px; margin-left: 15%;height:30px;line-height:30px'>活跃参与：</view>
+     <view class="zan-font-16 my-ib" bindtap="myStarChoos" style='height:30px;line-height:30px'>
+    <block wx:for="{{starMp}}">
+      <text wx:if="{{str>=index+1}}" style="padding-right: .5em;color:#ff9c00;" class="zan-c-red" data-str="{{index+1}}">★</text>
+      <text wx:if="{{str<index+1}}" style="padding-right: .5em;color:#808080;" class="zan-c-gray-dark" data-str="{{index+1}}">☆</text>
+    </block>
+  </view>
+  <!--★-->
+  <view class="zan-c-gray-dark" style='color:#808080;font-size:14px;height:30px;line-height:30px;float:right;margin-right:15%;    margin-top:-28px;'>{{starMp[str-1]}}</view>
+</view>
+
+  <textarea class='tt'></textarea>
+  <view class='btn'>立即点评</view>
+  <view class='all_box'><image class='all_img' src='../images/jj.png'></image></view>
+</view>
+</view>

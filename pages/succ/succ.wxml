@@ -1,0 +1,6 @@
+<view class='all'>
+  <view class='box_img'><image class='im' src='../images/succ@3x.png'></image></view>
+  <text class='txt'>签到成功</text>
+  <navigator url='/pages/class/class' ><button class='a1'>返回课程列表</button></navigator>
+  <navigator url='/pages/comment/comment' ><button class='a2'>立即评价</button></navigator>
+</view>

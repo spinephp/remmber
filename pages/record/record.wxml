@@ -1,0 +1,37 @@
+<view class='top'>
+  <image class='m1' src='../images/left.png'></image>
+  <text class='t'>18年2月</text>
+  <image class='m2' src='../images/right.png'></image>
+</view>
+<view class='all'>
+  <view class='box'>
+    <text class='t1'>街舞入门：基本动作教学</text>
+    <text class='t2'>通灌校区</text>
+    <text class='t3'>2017年2月22日</text>
+  </view>
+   <view class='box'>
+    <text class='t1'>街舞入门：基本动作教学</text>
+    <text class='t2'>通灌校区</text>
+    <text class='t3'>2017年2月22日</text>
+  </view>
+   <view class='box'>
+    <text class='t1'>街舞入门：基本动作教学</text>
+    <text class='t2'>通灌校区</text>
+    <text class='t3'>2017年2月22日</text>
+  </view>
+   <view class='box'>
+    <text class='t1'>街舞入门：基本动作教学</text>
+    <text class='t2'>通灌校区</text>
+    <text class='t3'>2017年2月22日</text>
+  </view>  
+   <view class='box'>
+    <text class='t1'>街舞入门：基本动作教学</text>
+    <text class='t2'>通灌校区</text>
+    <text class='t3'>2017年2月22日</text>
+  </view> 
+   <view class='box'>
+    <text class='t1'>街舞入门：基本动作教学</text>
+    <text class='t2'>通灌校区</text>
+    <text class='t3'>2017年2月22日</text>
+  </view> 
+</view>

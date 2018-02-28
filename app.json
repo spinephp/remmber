@@ -1,0 +1,22 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/my/my",
+    "pages/sign/sign",
+    "pages/class/class",
+    "pages/index/index",
+    "pages/record/record",
+    "pages/comment/comment",
+    "pages/succ/succ",
+    
+    "pages/logs/logs"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#34dbbd",
+    "navigationBarTitleText": "记上课",
+    "navigationBarTextStyle":"white",
+    "backgroundColor":"#cccccc"
+  }
+}

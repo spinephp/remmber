@@ -1,0 +1,93 @@
+.all{
+  width: 100%;
+  background: #ffffff;
+  font-family:"微软雅黑";
+}
+.top{
+  overflow: hidden;
+  margin: 0 3% 0 3%;
+  border-bottom: 1px solid #dddddd;
+}
+.t{
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+}
+.top1{
+  float: right;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+}
+.top_img{
+  width: 36px;
+  height:36px;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+/* .top2{
+  float: right;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.top_img1{
+  width: 15px;
+  height: 25px;
+  margin-top: 15px;
+  border-radius: 50%;
+} */
+.name{
+  overflow: hidden;
+  margin: 0 3% 0 3%;
+  border-bottom: 1px solid #dddddd;
+  height: 46px;
+  line-height: 46px;
+}
+.t1{
+  float: left;
+  font-size: 14px;
+}
+.pt{
+  float: left;
+  font-size: 12px;
+  height: 46px;
+  line-height: 46px;
+  width: 70%;
+}
+.sex{
+  overflow: hidden;
+  margin: 0 3% 0 3%;
+  height: 46px;
+  line-height: 46px;
+  border-bottom: 1px solid #dddddd;
+}
+.t2{
+  font-size: 14px;
+}
+.label{
+  font-size: 14px;
+}
+.section__title{
+  float: left;
+  font-size: 14px;
+}
+.picker{
+  font-size: 14px;
+  height: 46px;
+  line-height: 46px;
+  width: 70%;
+  margin-left: 3%;
+}
+.btn{
+  width: 80%;
+  margin: 20px auto;
+   background: #dddddd;
+  font-size: 18px;
+  color: #9f9f9f;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+}

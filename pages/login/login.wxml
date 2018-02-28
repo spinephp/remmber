@@ -1,0 +1,20 @@
+<!--login.wxml-->
+<view class='login' >
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class='icon'>
+     <view class='icon-bor' style='background-image:url("../images/ipon-icon.png");'>   
+      <input class='phone' name='phone'  type='text' maxlength="11" placeholder='请填写您的手机号码'  bindinput="InputEvent" auto-focus/>
+      </view>
+  </view>
+   <view class='login1'>
+      <view class='icon2'>
+         <view class='icon-bor' style='background-image:url("../images/email-icon.png");  '>
+          <input class='phone' name='phone_code'  type='text' placeholder='请填写验证码' auto-focus/>
+         </view>
+      </view>
+       <view class='btn'  bindtap="getPhoneCode" hidden="{{flag ? true : false}}">发送验证码</view>
+        <view class="time" hidden="{{flag ? false : true}}">{{time}}</view>
+   </view>
+   <button class='btn1' formType="submit">立即登录</button>
+   </form>
+</view>

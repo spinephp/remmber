@@ -1,0 +1,72 @@
+ 
+ .login{
+   margin-top: 10%;
+ }
+ .icon{
+   background: #ffffff;
+   width: 88%;
+   height: 42px;
+   margin: auto;
+   border: 1px solid#c8c8c8;
+    border-radius: 5px;
+ }
+ .icon2{
+   background: #ffffff;
+   width: 52%;
+   height: 42px;
+   margin: auto;
+   border: 1px solid#c8c8c8;
+   border-radius: 5px;
+   float:left;
+ }
+.icon-bor{
+    width: 100%;
+    background-position: 15px;
+    height: 42px;
+    margin: auto;
+    background-repeat: no-repeat;
+}
+  .phone{
+    margin-left: 40px;
+    width: 100%;
+    font-size: 16px; 
+    height: 40px;
+    line-height: 40px;
+  } 
+  .login1{
+  margin-top: 20px;
+  overflow: hidden;
+  margin-left:6%
+  }
+  .btn{
+  width: 36%;
+  float: right;
+  background: #34dbbd;
+  color: #fff;
+  height: 42px;
+  line-height: 42px;
+  margin-right: 6%;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  }
+  .time{
+    text-align: center;
+    height: 42px;
+    line-height: 42px;
+    width: 36%;
+    float: right;
+    background: #cccccc;
+    margin-right: 6%;
+   font-size: 16px;
+   border-radius: 5px;
+   color: #fff;
+  }
+  .btn1{
+  width: 90%;
+  background: #34dbbd;
+  color: #fff;
+  height: 42px;
+  line-height: 42px;
+  margin: 20px auto;
+  }
