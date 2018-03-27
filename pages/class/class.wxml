@@ -1,28 +1,29 @@
 
-<block wx:for="{{class_list}}">
-  <view class='all'>
+<view style='padding-bottom:90px;'>
+  <block wx:for="{{class_list}}" >
+  <view class='all' >
      <view class='top'>
-      <text>{{item.cname}}</text>
+      <text class='t1'>{{item.cname}}</text>
       <text class='te' style=''>学习中</text>
       <view class='right'>{{item.sname}}</view>
    </view>
    <view class='bottom'>
       <view class='midl'>
-         <text>上课时间：{{item.coursetime}}</text>
-         <text>上课内容：{{item.coursecontent}}</text>
-         <text>课时消耗：{{item.classtime}}</text>
-         <text>学员人数：{{item.cname}}</text>
+         <text class='t3'>上课时间：{{item.coursetime}}</text>
+         <text class='t2'>上课内容：{{item.coursecontent}}</text>
+         <text class='t4'>课时消耗：{{item.classtime}}</text>
       </view>
       <view class='you' catchtap="signin" id="{{item.cid}}">记上课</view>
    </view>
    </view>
 </block>
+</view>
 
 
 
-
+<!--
 <view class='boo'>
    <navigator url='/pages/class/class'><view><image src='../images/a2@3x.png'></image></view><text style='color:#34dbbd'>课程</text></navigator>
    <view class='ig'><image src='../images/shu1.png'></image></view>
    <navigator url='/pages/index/index'><view><image src='../images/b1@3x.png'></image></view><text>我的</text></navigator>
-</view>
+</view>-->

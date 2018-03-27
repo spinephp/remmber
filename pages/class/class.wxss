@@ -20,7 +20,10 @@
 .right{
   float: right;
   padding-right:5px;
-  
+  width: 36%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .bottom{
   overflow: hidden;
@@ -28,7 +31,7 @@
 .midl{
   margin-top: 5px;
   float: left;
-  width: 60%;
+  width: 66%;
 }
 .midl text{
   display: block;
@@ -51,15 +54,39 @@
   line-height: 60px;
   text-align: center;
 }
+.t1{
+  width: 36%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.t2{
+  width: 100%;
+   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.t3{
+  width: 100%;
+   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.t4{
+  width: 100%;
+   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 .te{
-  width:50px;
-  height:20px;
-  line-height: 20px;
+  width:46px;
+  height:18px;
+  line-height: 18px;
   background:#04bc00;
   border-radius: 2px;
-  font-size:14px;
+  font-size:12px;
   text-align:center;
-  margin-top:7px;
+  margin-top:8px;
   margin-left: 10px;
   color: #ffffff;
 }

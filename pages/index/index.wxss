@@ -30,6 +30,8 @@
   top: 2px;
   right: 5%;
   color: #ffffff;
+  cursor: pointer;
+  z-index: 9999
 }
 .box-im{
   width: 80px;

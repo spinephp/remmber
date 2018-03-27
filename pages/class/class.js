@@ -27,6 +27,7 @@ Page({
           'content-type': 'application/json'
         },
         success: function (res) {
+          console.log(res)
           if (res.data.success==1) {
 
             that.setData({

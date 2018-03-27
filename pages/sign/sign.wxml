@@ -3,27 +3,28 @@
    <view class='box_p'>
       <text class='p1'>上课内容：{{course_data.coursecontent}}</text>
       <text class='p2'>课时消耗：{{course_data.classtime}}</text> 
-      <text class='p3'>学员人数：{{course_data.classtime}}</text>     
+      <text class='p3'>学员人数：{{stu_list.length}}</text>     
    </view>
 </view>
 <view class='box_main'>
 
    <view class='box'>
-   <block wx:for="{{stu_list}}">
-      <view class='box_m'>
-        <view class='dui' style=' background-image: url("../images/dui.png");'>
-            <view class='box_img'><image class='im' src='http://testwechat.myipp.cn/Public/Uploads/photo/{{item.photo}}'></image></view>
+   <block wx:for="{{stu_list}}" >
+      <view class='{{signs[index]==0? "box_i":"box_m"}}'>
+        <view class='dui' id="{{index}}" bindtap="qiandao" style='{{signs[index]==0? "":backimg}}'>
+           <view class='box_img'><image class='im' src='http://testwechat.myipp.cn/Public/Uploads/photo/{{item.photo}}'></image></view>
             <text class='txt'>{{item.name}}</text>
         </view>
       </view>
    </block>
+   <!--
    <view class='box_i' >
         <view class='dui' >
             <view class='box_img'><image class='im' src='../images/jj.png'></image></view>
             <text class='txt'>王小二</text>
         </view>
    </view>
-     
+     -->
    </view>
    <view class='a' bindtap='signin'>全部签到</view>
    <button class='btn' catchtap="save">保存</button>

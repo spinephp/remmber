@@ -1,37 +1,22 @@
 <view class='top'>
   <image class='m1' src='../images/left.png'></image>
-  <text class='t'>18年2月</text>
+  <view wx:if="{{time==0}}">
+     <text class='t'>本月</text>
+  </view>
+  <view wx:elif="{{time==1}}">
+     <text class='t'>上个月</text>
+  </view>
+  <view wx:elif="{{time==2}}">
+     <text class='t'>{{twoTime}}月</text>
+  </view>
   <image class='m2' src='../images/right.png'></image>
 </view>
 <view class='all'>
-  <view class='box'>
-    <text class='t1'>街舞入门：基本动作教学</text>
-    <text class='t2'>通灌校区</text>
-    <text class='t3'>2017年2月22日</text>
+<block wx:for="{{recordData}}">
+<view class='box'>
+    <text class='t1'>{{item.cname}}</text>
+    <text class='t2'>{{item.sname}}</text>
+    <text class='t3'>{{item.time}}</text>
   </view>
-   <view class='box'>
-    <text class='t1'>街舞入门：基本动作教学</text>
-    <text class='t2'>通灌校区</text>
-    <text class='t3'>2017年2月22日</text>
-  </view>
-   <view class='box'>
-    <text class='t1'>街舞入门：基本动作教学</text>
-    <text class='t2'>通灌校区</text>
-    <text class='t3'>2017年2月22日</text>
-  </view>
-   <view class='box'>
-    <text class='t1'>街舞入门：基本动作教学</text>
-    <text class='t2'>通灌校区</text>
-    <text class='t3'>2017年2月22日</text>
-  </view>  
-   <view class='box'>
-    <text class='t1'>街舞入门：基本动作教学</text>
-    <text class='t2'>通灌校区</text>
-    <text class='t3'>2017年2月22日</text>
-  </view> 
-   <view class='box'>
-    <text class='t1'>街舞入门：基本动作教学</text>
-    <text class='t2'>通灌校区</text>
-    <text class='t3'>2017年2月22日</text>
-  </view> 
+</block>
 </view>

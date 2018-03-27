@@ -1,18 +1,20 @@
 <view class='box_top' style='background-image:url("../images/title_beijing.png");'>
    <view class='box_t'>街舞入门：基本动作教学</view>
    <view class='box_p'>
-      <text class='p1'>上课内容：街舞站位</text>
-      <text class='p2'>课时消耗：4</text> 
-      <text class='p3'>学员人数：15</text>     
+      <!--<text class='p1'>上课内容：街舞站位</text>-->
+      <text class='p1'>课时消耗：{{courseData.classtime}}</text> 
+      <text class='p3'>签到人数：{{stuCount}}</text>     
    </view>
 </view>
 <view class='box_main'>
 
    <view class='box'>
-      <view class='box_m'>
-        <view class='box_img'><image class='im' src='../images/jj.png'></image></view>
-            <text class='txt'>王小二</text>
+      <view wx:for="{{signs}}" class='{{dianpins[index]==0? "box_i":"box_m"}}' id="{{index}}" bindtap="eval">
+        <view class='box_img'><image class='im' src="http://testwechat.myipp.cn/Public/Uploads/photo/{{item.photo}}"></image></view>
+            <text class='txt'>{{item.name}}</text>
       </view>
+
+      <!--
        <view class='box_m'>
       <view class='box_img'><image class='im' src='../images/jj.png'></image></view>
             <text class='txt'>王小二</text>
@@ -29,7 +31,10 @@
        <view class='box_img'><image class='im' src='../images/jj.png'></image></view>
             <text class='txt'>王小二</text>
       </view>
+      -->
    </view>
+
+   <!--
     <view class='box'>
       <view class='box_i' >  
             <view class='box_img'><image class='im' src='../images/jj.png'></image></view>
@@ -52,12 +57,12 @@
             <text class='txt'>王小二</text>
       </view>
    </view>
+-->
 </view>
-
-<view class='all' style='background-image:url("../images/opacity.png")'>
+<view class="{{evaling==0? 'hidden':'all'}}" style='background-image:url("../images/opacity@3x.png")'>
   <view class='bottom'>
-  <view class='del'><image src='../images/x@3x.png' style='width:12px;height:12px; margin-right:8px;'></image></view>
-  <view class='name'>一叶知秋</view>
+  <view class='del'><image src="../images/title_beijing.png" style='width:12px;height:12px; margin-right:8px;'></image></view>
+  <view class='name'>{{signs[currentEvalingIndex].name}}</view>
   
  <view class='full'>
    <view class='jl' style='font-size: 14px; margin-left: 15%;height:30px;line-height:30px'>纪律专注：</view>
@@ -82,9 +87,12 @@
   <!--★-->
   <view class="zan-c-gray-dark" style='color:#808080;font-size:14px;height:30px;line-height:30px;float:right;margin-right:15%;    margin-top:-28px;'>{{starMp[str-1]}}</view>
 </view>
-
-  <textarea class='tt'></textarea>
-  <view class='btn'>立即点评</view>
-  <view class='all_box'><image class='all_img' src='../images/jj.png'></image></view>
+  <form bindsubmit="bindFormSubmit">  
+    <textarea class='tt' placeholder="" name="textarea"/>  
+    <button form-type="submit" class='btn'> 立即点评 </button>  
+  </form>    
+  <!--<textarea class='tt' bindblur="txtBlur" value="{{evaContent}}"></textarea>
+  <view class='btn'bindtap="dianpin">立即点评</view>-->
+  <view class='all_box'><image class='all_img' src="http://testwechat.myipp.cn/Public/Uploads/photo/{{signs[currentEvalingIndex].photo}}"></image></view>
 </view>
 </view>

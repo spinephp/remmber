@@ -2,25 +2,17 @@
   <view class='top'>
     <text class='t'>头像：</text>
     <!-- <view class='top2'><image class='top_img1' src='../images/fanhui.png'></image></view> -->
-    <view class='top1'><image class='top_img' src='../images/jj.png'></image></view>
+    <view class='top1'><image class='top_img' src='http://testwechat.myipp.cn/Public/Uploads/photo/{{myData.photo}}' bindtap="uploadPhoto"></image></view>
   </view>
-  <view class='name'><text class='t1'>姓名：</text><input class='pt' type='text' value='一叶知秋'>y一叶知秋</input></view>
-  <!-- <view class='sex'><text class='t2'>性别：</text> </view> -->
-  <!-- <view class="row-wrap">
-      <view class="label">性别</view>
-      <radio-group class="radio-group" bindchange="radioChange">
-        <label class="radio" wx:for="{{items}}">
-          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
-        </label>
-      </radio-group>
-    </view> -->
+  <view class='name'><text class='t1'>姓名：</text><input class='pt' bindchange="nameChange" type='text' value="{{myData.name}}"></input></view>
+  
     <view class="section">
-  <!-- <view class="section__title"></view> -->
-  <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+ 
+  <picker mode="selector" bindchange="checkChange" value="{{multiIndex}}" range="{{multiArray}}">
     <view class="picker">
-     性别： {{multiArray[0][multiIndex[0]]}}
+     性别： {{multiArray[multiIndex]}}
     </view>
   </picker>
 </view>
 </view>
-<view class='btn'>退出登录</view>
+<view class='btn' bindtap="logout">退出登录</view>

@@ -1,3 +1,4 @@
+const app = getApp()
 Page({
 
   /**
@@ -143,11 +144,6 @@ Page({
         image: '../images/warn.png',
         duration: 2000
       })
-
-
-
-
-
     }*/
     wx.request({
       url: 'http://testwechat.myipp.cn/index.php/Public/loginSmall', //仅为示例，并非真实的接口地址

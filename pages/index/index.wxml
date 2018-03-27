@@ -2,33 +2,35 @@
 <view class='top' style='background-image:url("../images/beijing2.png");'>
    <navigator url='/pages/my/my' class='set'>设置</navigator>
    <view class='box-im'>
-      <image class='im' src='../images/touxiang2.png'></image>
+      <image class='im' src='http://testwechat.myipp.cn/Public/Uploads/photo/{{myData.photo}}'></image>
    </view>
   <view class='box-im1' >
-      <text>徐建建</text>
-      <view class='box-imm'>
+      <text>{{myData.name}}</text>
+    
+      <view class='box-imm' wx:if="{{myData.sex==2}}">
+
          <image class='im1' src='../images/1.png'></image>
      </view>
-     <view class='box-imm'>
+     <view class='box-imm' wx:elif="{{myData.sex==1}}">
          <image class='im1' src='../images/2.png'></image>
      </view>
   </view>
-  <text class='tel'>188-8888-8888</text>
+  <text class='tel'>{{myData.tel}}</text>
 </view>
 <view class='midl'>
-   <navigator class='mid' url='/pages/record/record'>
-      <text>12月累计课时</text>
-      <view class='mid-r' ><view style='background:#67db34'>20</view></view>
+   <navigator class='mid' url='/pages/record/record?time=2'>
+      <text>{{twoTime}}月累计课时</text>
+      <view class='mid-r' ><view style='background:#67db34'>{{lastTwoMonth}}</view></view>
    </navigator>
    <view class='imag'><image src='../images/shu.png'></image></view>
-    <navigator class='mid' url='/pages/record/record'>
-      <text>01月累计课时</text>
-      <view class='mid-r'><view  style='background:#db9234'>20</view></view>
+    <navigator class='mid' url='/pages/record/record?time=1'>
+      <text>上个月累计课时</text>
+      <view class='mid-r'><view  style='background:#db9234'>{{lastMonth}}</view></view>
    </navigator>
    <view class='imag'><image src='../images/shu.png'></image></view>
-    <navigator class='mid' url='/pages/record/record'>
-      <text>02月累计课时</text>
-      <view class='mid-r'><view style='background:#3487db'>20</view></view>
+    <navigator class='mid' url='/pages/record/record?time=0'>
+      <text>本月累计课时</text>
+      <view class='mid-r'><view style='background:#3487db'>{{curMonth}}</view></view>
    </navigator>
 </view>
 <view class='boo'>
